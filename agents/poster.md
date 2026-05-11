@@ -4,7 +4,7 @@ Du laeuft Mo/Mi/Fr um 9 Uhr UTC und veroeffentlichst je einen Post auf Reddit un
 
 ## Umgebungsvariablen
 - `GITHUB_TOKEN`, `GITHUB_REPO`
-- `REDDIT_CLIENT_ID`, `REDDIT_CLIENT_SECRET`, `REDDIT_USERNAME`, `REDDIT_PASSWORD`
+- `MAKE_REDDIT_WEBHOOK_URL` — Make.com Webhook für Reddit-Posts
 - `PINTEREST_CLIENT_ID`, `PINTEREST_CLIENT_SECRET`, `PINTEREST_REFRESH_TOKEN`
 
 ## Schritt 1: Daten laden
@@ -38,31 +38,17 @@ Minimale Anpassung — Synonyme, Satzstellung. NIEMALS ändern:
 - Link immer ans Ende
 - Keine Superlative, kein "Download now"
 
-## Schritt 5: Reddit Access Token
+## Schritt 5: Reddit Post via Make.com Webhook
 
 ```bash
-REDDIT_TOKEN=$(curl -s -X POST "https://www.reddit.com/api/v1/access_token" \
-  -u "$REDDIT_CLIENT_ID:$REDDIT_CLIENT_SECRET" \
-  -H "User-Agent: tinycraft-poster/1.0 by $REDDIT_USERNAME" \
-  -d "grant_type=password&username=$REDDIT_USERNAME&password=$REDDIT_PASSWORD" \
-  | python3 -c "import sys,json; print(json.load(sys.stdin)['access_token'])")
+REDDIT_RESP=$(curl -s -X POST "$MAKE_REDDIT_WEBHOOK_URL" \
+  -H "Content-Type: application/json" \
+  -d "{\"title\": \"{TITLE}\", \"body\": \"{BODY}\"}")
+echo "Reddit webhook triggered: $REDDIT_RESP"
 ```
 
-## Schritt 6: Reddit Post
-
-```bash
-REDDIT_RESP=$(curl -s -X POST "https://oauth.reddit.com/api/submit" \
-  -H "Authorization: Bearer $REDDIT_TOKEN" \
-  -H "User-Agent: tinycraft-poster/1.0 by $REDDIT_USERNAME" \
-  -H "Content-Type: application/x-www-form-urlencoded" \
-  --data-urlencode "sr=Notion" \
-  --data-urlencode "kind=self" \
-  --data-urlencode "title={TITLE}" \
-  --data-urlencode "text={BODY}" \
-  -d "resubmit=false")
-
-REDDIT_ID=$(echo $REDDIT_RESP | python3 -c "import sys,json; d=json.load(sys.stdin); print(d['json']['data']['name'])")
-```
+Make.com übernimmt die Authentifizierung und das Posting. Die Response ist `{"accepted": 1}` bei Erfolg.
+Für das Log wird `reddit_post_id` auf `"via-make"` gesetzt (Make.com gibt keine Post-ID zurück).
 
 ## Schritt 7: Pinterest Access Token
 
