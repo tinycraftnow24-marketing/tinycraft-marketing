@@ -1,0 +1,33 @@
+[
+  {
+    "id": "notion-job-tracker-r-01",
+    "platform": "reddit",
+    "subreddit": "r/Notion",
+    "title": "Built a job application tracker in Notion — pipeline, interview notes per stage, offer comparison [9€]",
+    "body": "Job searching across 6+ companies means managing different stages, different contacts, different salary expectations. I kept losing track of who to follow up with and what I said in which interview.\n\nBuilt this template to fix it:\n\n- Applications database — company, role, status (Wishlist → Offer), salary range, remote policy, excitement score, follow-up date\n- Interviews database — one entry per interview stage. Questions asked, my answers, what to improve next time\n- Contacts database — every HR contact, hiring manager and interviewer per company\n- Offers database — compare base salary, bonus, equity, benefits and remote policy side by side\n- Dashboard — overview of your full pipeline\n\nWorks on Notion's free plan. EN/DE.\n\n→ [Gumroad link]",
+    "status": "unused",
+    "score": null,
+    "posted_at": null,
+    "last_image_used": null
+  },
+  {
+    "id": "notion-job-tracker-p-01",
+    "platform": "pinterest",
+    "title": "Notion Job Application Tracker — Pipeline, Interviews & Offer Comparison",
+    "description": "Track every job application in Notion. Full pipeline from Wishlist to Offer, interview notes per stage, contact manager, and side-by-side offer comparison. No spreadsheet chaos. #notiontemplate #jobsearch #career #productivity #interviewprep",
+    "status": "unused",
+    "score": null,
+    "posted_at": null,
+    "last_image_used": null
+  },
+  {
+    "id": "notion-job-tracker-p-02",
+    "platform": "pinterest",
+    "title": "Never forget what was asked in an interview — Notion template",
+    "description": "Log every interview question, your answer, and what to improve next time. Separate entries per stage (phone screen, technical, final round). All in Notion, all yours. #interviewprep #jobhunting #notion #careeradvice",
+    "status": "unused",
+    "score": null,
+    "posted_at": null,
+    "last_image_used": null
+  }
+]

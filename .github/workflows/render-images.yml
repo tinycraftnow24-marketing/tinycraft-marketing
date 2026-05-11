@@ -1,0 +1,33 @@
+name: Render HTML to PNG
+
+on:
+  push:
+    paths:
+      - 'images/**/*.html'
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: cd scripts && npm install
+
+      - name: Render images
+        run: cd scripts && node render_images.js
+
+      - name: Commit PNGs
+        run: |
+          git config user.name "tinycraft-bot"
+          git config user.email "bot@tinycraft.local"
+          git add images/**/*.png
+          git diff --cached --quiet || git commit -m "chore: render HTML to PNG [skip ci]"
+          git push

@@ -1,0 +1,11 @@
+{
+  "name": "tinycraft-image-renderer",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "render": "node render_images.js"
+  },
+  "dependencies": {
+    "puppeteer": "^21.0.0"
+  }
+}

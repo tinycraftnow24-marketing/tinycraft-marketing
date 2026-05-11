@@ -1,0 +1,78 @@
+{
+  "github_repo": "tinycraftnow24-marketing/tinycraft-marketing",
+  "github_branch": "main",
+  "posting_schedule": {
+    "days": ["monday", "wednesday", "friday"],
+    "time_utc": "09:00"
+  },
+  "performance_check_hours": 48,
+  "top_performer_thresholds": {
+    "reddit_upvotes": 20,
+    "pinterest_repins": 50
+  },
+  "weak_post_threshold": 5,
+  "portfolio_post_every_n_weeks": 3,
+  "pinterest_board_id": "",
+  "products": [
+    {
+      "id": "notion-habit-tracker",
+      "name": "Notion Habit Tracker",
+      "gumroad_url": "https://tinycraft.gumroad.com/l/habit-tracker",
+      "ready": true,
+      "premium": false,
+      "platforms": ["reddit", "pinterest"],
+      "subreddit": "r/Notion",
+      "source_path": "content/notion-habit-tracker"
+    },
+    {
+      "id": "notion-weekly-planner",
+      "name": "Notion Weekly Planner",
+      "gumroad_url": "https://tinycraft.gumroad.com/l/weekly-planner",
+      "ready": true,
+      "premium": false,
+      "platforms": ["reddit", "pinterest"],
+      "subreddit": "r/Notion",
+      "source_path": "content/notion-weekly-planner"
+    },
+    {
+      "id": "notion-personal-finance",
+      "name": "Notion Personal Finance Tracker",
+      "gumroad_url": "https://tinycraft.gumroad.com/l/personal-finance",
+      "ready": true,
+      "premium": false,
+      "platforms": ["reddit", "pinterest"],
+      "subreddit": "r/Notion",
+      "source_path": "content/notion-personal-finance"
+    },
+    {
+      "id": "notion-job-tracker",
+      "name": "Notion Job Application Tracker",
+      "gumroad_url": "",
+      "ready": false,
+      "premium": false,
+      "platforms": ["reddit", "pinterest"],
+      "subreddit": "r/Notion",
+      "source_path": "content/notion-job-tracker"
+    },
+    {
+      "id": "notion-product-roadmap",
+      "name": "Notion Product Roadmap",
+      "gumroad_url": "",
+      "ready": false,
+      "premium": false,
+      "platforms": ["reddit", "pinterest"],
+      "subreddit": "r/Notion",
+      "source_path": "content/notion-product-roadmap"
+    },
+    {
+      "id": "notion-book-tracker",
+      "name": "Notion Book Tracker",
+      "gumroad_url": "",
+      "ready": false,
+      "premium": false,
+      "platforms": ["reddit", "pinterest"],
+      "subreddit": "r/Notion",
+      "source_path": "content/notion-book-tracker"
+    }
+  ]
+}

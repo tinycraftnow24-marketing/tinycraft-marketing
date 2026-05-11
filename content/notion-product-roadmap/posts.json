@@ -1,0 +1,33 @@
+[
+  {
+    "id": "notion-product-roadmap-r-01",
+    "platform": "reddit",
+    "subreddit": "r/Notion",
+    "title": "Built a product roadmap system in Notion — features linked to user problems, effort/impact scoring, release tracking [9€]",
+    "body": "Been using Notion for product planning but kept struggling with two things: knowing *why* I was building something, and prioritizing without going on gut feel.\n\nBuilt this template to solve it:\n\n- Features database — status pipeline (Idea → Done), Effort (S/M/L/XL), Impact (Low–Critical), Priority (P0–P3), linked to releases and user problems\n- User Problems database — the real problems behind your features: severity, how many users it affects, source (interview/survey/analytics), status\n- Releases database — group features into versioned releases with target dates and release notes\n- Feedback database — capture raw user feedback from email/Reddit/Twitter, link it to the feature it inspired\n\nThe workflow: add a User Problem before adding a Feature. If you can't name the problem, question whether to build the feature at all.\n\nWorks on Notion's free plan. EN.\n\n→ [Gumroad link]",
+    "status": "unused",
+    "score": null,
+    "posted_at": null,
+    "last_image_used": null
+  },
+  {
+    "id": "notion-product-roadmap-p-01",
+    "platform": "pinterest",
+    "title": "Notion Product Roadmap — Features, User Problems, Releases & Feedback",
+    "description": "Plan what to build next in Notion. Link every feature to a real user problem. Score by Effort + Impact. Track releases. Capture feedback. One system, four databases. #notiontemplate #productmanagement #indiehacker #solofounder #roadmap",
+    "status": "unused",
+    "score": null,
+    "posted_at": null,
+    "last_image_used": null
+  },
+  {
+    "id": "notion-product-roadmap-p-02",
+    "platform": "pinterest",
+    "title": "Build features users actually want — Notion template for indie makers",
+    "description": "Stop building from gut feeling. This Notion template forces you to link every feature to a real user problem — and links user feedback all the way to the features it inspired. #productmanagement #notion #indiehackers #solofounder #productivity",
+    "status": "unused",
+    "score": null,
+    "posted_at": null,
+    "last_image_used": null
+  }
+]
