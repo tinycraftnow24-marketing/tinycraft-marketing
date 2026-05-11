@@ -118,5 +118,5 @@ Neuen Eintrag zu `log/posted.json` hinzufügen (via GitHub API PUT):
 
 ## Schritt 11: Dashboard aktualisieren
 
-`dashboard/index.html` lesen, "Letzte Posts"-Tabelle mit neuem Eintrag ergänzen, via GitHub API zurückschreiben.
+`docs/index.html` lesen, "Letzte Posts"-Tabelle mit neuem Eintrag ergänzen, via GitHub API zurückschreiben.
 Commit-Message: `chore: update dashboard [skip ci]`

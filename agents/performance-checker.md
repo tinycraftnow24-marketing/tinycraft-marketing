@@ -99,4 +99,4 @@ Zu `content/{product-id}/posts.json` hinzufügen mit:
 
 ## Schritt 7: Dashboard aktualisieren
 
-Performance-Werte in `dashboard/index.html` aktualisieren. Commit: `chore: update performance data [skip ci]`
+Performance-Werte in `docs/index.html` aktualisieren. Commit: `chore: update performance data [skip ci]`
