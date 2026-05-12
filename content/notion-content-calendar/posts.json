@@ -1,0 +1,33 @@
+[
+  {
+    "id": "notion-content-calendar-r-01",
+    "platform": "reddit",
+    "subreddit": "r/Notion",
+    "title": "Built a content calendar in Notion with Content Pillars and performance tracking [9€]",
+    "body": "I kept posting without a real strategy and couldn't tell which content was working. Built this template to fix it.\n\nTwo databases:\n\nPosts — full pipeline from Idea to Published. Platform (LinkedIn / Twitter X / Instagram / YouTube / Newsletter / Blog / TikTok), status, format, publish date, pillar link, hook field (first sentence), views/likes/saves tracking, repurposed flag.\n\nContent Pillars — define your 3-4 core themes before you post anything. Every post links back to a pillar. Forces you to think about who you're talking to and why, not just what to write next.\n\nThe workflow: define pillars → add ideas with a hook → write → schedule → publish → log performance. 48 hours after each post, add the stats.\n\nFree Notion plan. 9€ one-time.\n\n→ [Gumroad link]",
+    "status": "unused",
+    "score": null,
+    "posted_at": null,
+    "last_image_used": null
+  },
+  {
+    "id": "notion-content-calendar-p-01",
+    "platform": "pinterest",
+    "title": "Notion Content Calendar — Posts, Pillars & Performance Tracking",
+    "description": "Plan content across LinkedIn, Instagram, Newsletter and more in Notion. Posts pipeline from Idea to Published, Content Pillars for strategic posting, views/saves tracking. #notiontemplate #contentcalendar #socialmedia #contentcreator #linkedin",
+    "status": "unused",
+    "score": null,
+    "posted_at": null,
+    "last_image_used": null
+  },
+  {
+    "id": "notion-content-calendar-p-02",
+    "platform": "pinterest",
+    "title": "Define your Content Pillars — Notion template for strategic creators",
+    "description": "Before you post, define what you stand for. This Notion template makes you link every post to a Content Pillar. No more random content. Build a recognizable brand. #contentpillars #notion #contentmarketing #solopreneur #creator",
+    "status": "unused",
+    "score": null,
+    "posted_at": null,
+    "last_image_used": null
+  }
+]

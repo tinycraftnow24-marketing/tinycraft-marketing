@@ -1,5 +1,9 @@
 {
   "product_id": "notion-weekly-planner",
-  "images": [],
-  "last_updated": null
+  "images": [
+    {"name": "editorial-pinterest", "path": "images/notion-weekly-planner/editorial-pinterest.png", "format": "pinterest"},
+    {"name": "thumbnail", "path": "images/notion-weekly-planner/thumbnail.png", "format": "thumbnail"}
+  ],
+  "last_image_used": null,
+  "last_updated": "2026-05-12"
 }

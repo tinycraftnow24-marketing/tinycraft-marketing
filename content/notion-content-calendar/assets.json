@@ -1,0 +1,9 @@
+{
+  "product_id": "notion-content-calendar",
+  "images": [
+    {"name": "editorial-pinterest", "path": "images/notion-content-calendar/editorial-pinterest.png", "format": "pinterest"},
+    {"name": "thumbnail", "path": "images/notion-content-calendar/thumbnail.png", "format": "thumbnail"}
+  ],
+  "last_image_used": null,
+  "last_updated": "2026-05-12"
+}

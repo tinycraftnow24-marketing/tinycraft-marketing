@@ -1,5 +1,9 @@
 {
   "product_id": "notion-personal-finance",
-  "images": [],
-  "last_updated": null
+  "images": [
+    {"name": "editorial-pinterest", "path": "images/notion-personal-finance/editorial-pinterest.png", "format": "pinterest"},
+    {"name": "thumbnail", "path": "images/notion-personal-finance/thumbnail.png", "format": "thumbnail"}
+  ],
+  "last_image_used": null,
+  "last_updated": "2026-05-12"
 }

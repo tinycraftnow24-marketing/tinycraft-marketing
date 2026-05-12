@@ -1,5 +1,9 @@
 {
   "product_id": "notion-habit-tracker",
-  "images": [],
-  "last_updated": null
+  "images": [
+    {"name": "editorial-pinterest", "path": "images/notion-habit-tracker/editorial-pinterest.png", "format": "pinterest"},
+    {"name": "thumbnail", "path": "images/notion-habit-tracker/thumbnail.png", "format": "thumbnail"}
+  ],
+  "last_image_used": null,
+  "last_updated": "2026-05-12"
 }

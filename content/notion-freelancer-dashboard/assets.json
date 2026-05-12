@@ -1,0 +1,9 @@
+{
+  "product_id": "notion-freelancer-dashboard",
+  "images": [
+    {"name": "editorial-pinterest", "path": "images/notion-freelancer-dashboard/editorial-pinterest.png", "format": "pinterest"},
+    {"name": "thumbnail", "path": "images/notion-freelancer-dashboard/thumbnail.png", "format": "thumbnail"}
+  ],
+  "last_image_used": null,
+  "last_updated": "2026-05-12"
+}

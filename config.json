@@ -73,6 +73,26 @@
       "platforms": ["reddit", "pinterest"],
       "subreddit": "r/Notion",
       "source_path": "content/notion-book-tracker"
+    },
+    {
+      "id": "notion-content-calendar",
+      "name": "Notion Content Calendar",
+      "gumroad_url": "",
+      "ready": false,
+      "premium": false,
+      "platforms": ["reddit", "pinterest"],
+      "subreddit": "r/Notion",
+      "source_path": "content/notion-content-calendar"
+    },
+    {
+      "id": "notion-freelancer-dashboard",
+      "name": "Notion Freelancer Dashboard",
+      "gumroad_url": "",
+      "ready": false,
+      "premium": false,
+      "platforms": ["reddit", "pinterest"],
+      "subreddit": "r/Notion",
+      "source_path": "content/notion-freelancer-dashboard"
     }
   ]
 }
