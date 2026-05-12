@@ -93,6 +93,26 @@
       "platforms": ["reddit", "pinterest"],
       "subreddit": "r/Notion",
       "source_path": "content/notion-freelancer-dashboard"
+    },
+    {
+      "id": "notion-second-brain",
+      "name": "Notion Second Brain (PARA)",
+      "gumroad_url": "",
+      "ready": false,
+      "premium": false,
+      "platforms": ["reddit", "pinterest"],
+      "subreddit": "r/Notion",
+      "source_path": "content/notion-second-brain"
+    },
+    {
+      "id": "notion-agency-os",
+      "name": "Notion Agency OS",
+      "gumroad_url": "",
+      "ready": false,
+      "premium": false,
+      "platforms": ["reddit", "pinterest"],
+      "subreddit": "r/Notion",
+      "source_path": "content/notion-agency-os"
     }
   ]
 }

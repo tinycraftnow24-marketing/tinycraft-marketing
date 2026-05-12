@@ -1,0 +1,33 @@
+[
+  {
+    "id": "notion-agency-os-r-01",
+    "platform": "reddit",
+    "subreddit": "r/Notion",
+    "title": "Built an Agency OS in Notion — lead pipeline, client CRM, project tracker, invoices, time log. All linked. [19€]",
+    "body": "I was using Pipedrive for leads, Harvest for time tracking, and a spreadsheet for invoices. It was chaos. Everything is now in Notion.\n\nWhat I built:\n\n- Leads database — Kanban from Lead to Closed Won. Stage, value, next action date, source.\n- Clients CRM — contact info + automatic revenue total (rollup from invoices)\n- Projects — linked to client, with budget, deadline, type (fixed/hourly/retainer), billing status\n- Tasks — linked to projects, with priority and due date\n- Time Log — hours per project, hourly rate, auto-total formula\n- Finances — invoices and expenses in one database. Draft → Sent → Paid → Overdue.\n- Proposals — track what you've sent, when it expires, whether it was accepted\n- SOPs — 5 pre-filled process templates (onboarding, invoicing, project close, etc.)\n- Dashboard — active projects, open leads, pending invoices, this week's tasks\n\nWorks solo (just ignore the Team database). Also works for small agencies of 2–5 people.\n\nWorks on the free Notion plan. EN + DE.\n\n19€ one-time.\n\n→ [Link]",
+    "status": "unused",
+    "score": null,
+    "posted_at": null,
+    "last_image_used": null
+  },
+  {
+    "id": "notion-agency-os-p-01",
+    "platform": "pinterest",
+    "title": "Notion Agency OS — Leads, Clients, Projects, Invoices for Freelancers",
+    "description": "Run your freelance business in Notion. Lead pipeline from first contact to closed deal, client CRM with auto revenue total, project tracking with budget and deadline, time logging with auto-total formula, invoices + expenses in one view. 9 linked databases. One dashboard. One-time 19€, EN/DE, free Notion plan. #notiontemplate #freelance #agencyOS #clientmanagement #invoicetracker #notion",
+    "status": "unused",
+    "score": null,
+    "posted_at": null,
+    "last_image_used": null
+  },
+  {
+    "id": "notion-agency-os-p-02",
+    "platform": "pinterest",
+    "title": "How I track every invoice and client in Notion — freelance template",
+    "description": "Invoice tracker with Sent / Paid / Overdue status, auto revenue rollup per client, lead pipeline, project budget tracking. One Notion template, 19€ once. #freelancenotion #invoicetracker #clientmanagement #notiontemplate",
+    "status": "unused",
+    "score": null,
+    "posted_at": null,
+    "last_image_used": null
+  }
+]

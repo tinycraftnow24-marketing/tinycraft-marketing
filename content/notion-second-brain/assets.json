@@ -1,0 +1,9 @@
+{
+  "product_id": "notion-second-brain",
+  "images": [
+    {"name": "editorial-pinterest", "path": "images/notion-second-brain/editorial-pinterest.png", "format": "pinterest"},
+    {"name": "thumbnail", "path": "images/notion-second-brain/thumbnail.png", "format": "thumbnail"}
+  ],
+  "last_image_used": null,
+  "last_updated": "2026-05-12"
+}
