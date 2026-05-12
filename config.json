@@ -17,7 +17,7 @@
     {
       "id": "notion-habit-tracker",
       "name": "Notion Habit Tracker",
-      "gumroad_url": "https://tinycraft.gumroad.com/l/habit-tracker",
+      "gumroad_url": "https://tinycraft.gumroad.com/l/yxvmey",
       "ready": true,
       "premium": false,
       "platforms": ["reddit", "pinterest"],
@@ -27,7 +27,7 @@
     {
       "id": "notion-weekly-planner",
       "name": "Notion Weekly Planner",
-      "gumroad_url": "https://tinycraft.gumroad.com/l/weekly-planner",
+      "gumroad_url": "https://tinycraft.gumroad.com/l/iitml",
       "ready": true,
       "premium": false,
       "platforms": ["reddit", "pinterest"],
@@ -37,7 +37,7 @@
     {
       "id": "notion-personal-finance",
       "name": "Notion Personal Finance Tracker",
-      "gumroad_url": "https://tinycraft.gumroad.com/l/personal-finance",
+      "gumroad_url": "https://tinycraft.gumroad.com/l/qwpidn",
       "ready": true,
       "premium": false,
       "platforms": ["reddit", "pinterest"],
@@ -47,8 +47,8 @@
     {
       "id": "notion-job-tracker",
       "name": "Notion Job Application Tracker",
-      "gumroad_url": "",
-      "ready": false,
+      "gumroad_url": "https://tinycraft.gumroad.com/l/nwriss",
+      "ready": true,
       "premium": false,
       "platforms": ["reddit", "pinterest"],
       "subreddit": "r/Notion",
@@ -57,8 +57,8 @@
     {
       "id": "notion-product-roadmap",
       "name": "Notion Product Roadmap",
-      "gumroad_url": "",
-      "ready": false,
+      "gumroad_url": "https://tinycraft.gumroad.com/l/jlozlp",
+      "ready": true,
       "premium": false,
       "platforms": ["reddit", "pinterest"],
       "subreddit": "r/Notion",
@@ -67,8 +67,8 @@
     {
       "id": "notion-book-tracker",
       "name": "Notion Book Tracker",
-      "gumroad_url": "",
-      "ready": false,
+      "gumroad_url": "https://tinycraft.gumroad.com/l/ienuys",
+      "ready": true,
       "premium": false,
       "platforms": ["reddit", "pinterest"],
       "subreddit": "r/Notion",
@@ -77,8 +77,8 @@
     {
       "id": "notion-content-calendar",
       "name": "Notion Content Calendar",
-      "gumroad_url": "",
-      "ready": false,
+      "gumroad_url": "https://tinycraft.gumroad.com/l/mvhoe",
+      "ready": true,
       "premium": false,
       "platforms": ["reddit", "pinterest"],
       "subreddit": "r/Notion",
@@ -87,8 +87,8 @@
     {
       "id": "notion-freelancer-dashboard",
       "name": "Notion Freelancer Dashboard",
-      "gumroad_url": "",
-      "ready": false,
+      "gumroad_url": "https://tinycraft.gumroad.com/l/xgokjm",
+      "ready": true,
       "premium": false,
       "platforms": ["reddit", "pinterest"],
       "subreddit": "r/Notion",
@@ -97,8 +97,8 @@
     {
       "id": "notion-second-brain",
       "name": "Notion Second Brain (PARA)",
-      "gumroad_url": "",
-      "ready": false,
+      "gumroad_url": "https://tinycraft.gumroad.com/l/kydda",
+      "ready": true,
       "premium": false,
       "platforms": ["reddit", "pinterest"],
       "subreddit": "r/Notion",
@@ -107,8 +107,8 @@
     {
       "id": "notion-agency-os",
       "name": "Notion Agency OS",
-      "gumroad_url": "",
-      "ready": false,
+      "gumroad_url": "https://tinycraft.gumroad.com/l/bnkehx",
+      "ready": true,
       "premium": false,
       "platforms": ["reddit", "pinterest"],
       "subreddit": "r/Notion",
