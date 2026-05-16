@@ -2,8 +2,9 @@
   "github_repo": "tinycraftnow24-marketing/tinycraft-marketing",
   "github_branch": "main",
   "posting_schedule": {
-    "days": ["monday", "wednesday", "friday"],
-    "time_utc": "09:00"
+    "days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+    "time_utc": "09:00",
+    "reddit_day": "wednesday"
   },
   "performance_check_hours": 48,
   "top_performer_thresholds": {
