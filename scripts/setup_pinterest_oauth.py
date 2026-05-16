@@ -1,41 +1,20 @@
 """
-Einmaliger Pinterest OAuth2 Authorization Code Flow.
-Oeffnet Browser fuer Login, dann lokaler Callback.
-Ausfuehren: python scripts/setup_pinterest_oauth.py
+Pinterest OAuth2 — manueller Code-Flow.
+Ausfuehren: python scripts/setup_pinterest_oauth.py <client_id> <client_secret>
 """
-import requests
-import webbrowser
+import sys
 import urllib.parse
-from http.server import HTTPServer, BaseHTTPRequestHandler
-import threading
+import webbrowser
+
+if len(sys.argv) >= 3:
+    client_id     = sys.argv[1].strip()
+    client_secret = sys.argv[2].strip()
+else:
+    client_id     = input("Pinterest App ID: ").strip()
+    client_secret = input("Pinterest App Secret Key: ").strip()
 
 REDIRECT_URI = "http://localhost:8080/callback"
 SCOPES = "boards:read,boards:write,pins:read,pins:write"
-
-print("=== Pinterest OAuth Setup ===\n")
-client_id     = input("Pinterest App ID: ").strip()
-client_secret = input("Pinterest App Secret Key: ").strip()
-
-auth_code_holder = {}
-
-class CallbackHandler(BaseHTTPRequestHandler):
-    def do_GET(self):
-        parsed = urllib.parse.urlparse(self.path)
-        params = urllib.parse.parse_qs(parsed.query)
-        if "code" in params:
-            auth_code_holder["code"] = params["code"][0]
-            self.send_response(200)
-            self.end_headers()
-            self.wfile.write(b"Auth erfolgreich! Du kannst dieses Fenster schliessen.")
-        else:
-            self.send_response(400)
-            self.end_headers()
-    def log_message(self, *args):
-        pass
-
-server = HTTPServer(("localhost", 8080), CallbackHandler)
-thread = threading.Thread(target=server.handle_request)
-thread.start()
 
 auth_url = (
     f"https://www.pinterest.com/oauth/"
@@ -44,28 +23,60 @@ auth_url = (
     f"&response_type=code"
     f"&scope={SCOPES}"
 )
-print(f"\nBrowser wird geöffnet für Pinterest-Login...")
+
+print("\n=== Pinterest OAuth Setup ===\n")
+print("Schritt 1: Oeffne diesen Link im Browser und logge dich ein:\n")
+print(auth_url)
+print()
 webbrowser.open(auth_url)
-thread.join(timeout=120)
 
-if "code" not in auth_code_holder:
-    print("FEHLER: Kein Auth-Code empfangen (Timeout 120s).")
-    exit(1)
+print("Schritt 2: Nach dem Login wirst du zu localhost:8080/callback weitergeleitet.")
+print("Die Seite zeigt einen Fehler (Connection refused) — das ist OK.")
+print("Kopiere die URL und fuege sie als drittes Argument ein:\n")
+print(f'  python scripts/setup_pinterest_oauth.py {client_id} {client_secret} "DEINE_URL"\n')
 
-resp = requests.post(
-    "https://api.pinterest.com/v5/oauth/token",
-    data={
-        "grant_type": "authorization_code",
-        "code": auth_code_holder["code"],
-        "redirect_uri": REDIRECT_URI,
-    },
-    auth=(client_id, client_secret),
-)
-resp.raise_for_status()
-tokens = resp.json()
+if len(sys.argv) >= 4:
+    redirect_url = sys.argv[3].strip()
+else:
+    print("FEHLER: Bitte die Redirect-URL als drittes Argument uebergeben.")
+    sys.exit(1)
 
-print(f"\n✓ Pinterest OAuth erfolgreich!")
-print(f"\nFuege folgendes als Claude Code Umgebungsvariablen ein (/config):")
+parsed = urllib.parse.urlparse(redirect_url)
+params = urllib.parse.parse_qs(parsed.query)
+
+if "code" not in params:
+    print("FEHLER: Kein 'code' Parameter in der URL gefunden.")
+    sys.exit(1)
+
+code = params["code"][0]
+print(f"\nAuth-Code erhalten: {code[:20]}...")
+
+import urllib.request
+import json
+import base64
+
+token_url = "https://api.pinterest.com/v5/oauth/token"
+data = urllib.parse.urlencode({
+    "grant_type": "authorization_code",
+    "code": code,
+    "redirect_uri": REDIRECT_URI,
+}).encode()
+
+credentials = base64.b64encode(f"{client_id}:{client_secret}".encode()).decode()
+req = urllib.request.Request(token_url, data=data, headers={
+    "Authorization": f"Basic {credentials}",
+    "Content-Type": "application/x-www-form-urlencoded",
+})
+
+try:
+    with urllib.request.urlopen(req) as resp:
+        tokens = json.loads(resp.read())
+except urllib.error.HTTPError as e:
+    print(f"FEHLER: {e.read().decode()}")
+    sys.exit(1)
+
+print(f"\nPinterest OAuth erfolgreich!")
 print(f"\nPINTEREST_CLIENT_ID={client_id}")
 print(f"PINTEREST_CLIENT_SECRET={client_secret}")
-print(f"PINTEREST_REFRESH_TOKEN={tokens['refresh_token']}")
+print(f"PINTEREST_REFRESH_TOKEN={tokens.get('refresh_token', 'N/A')}")
+print(f"PINTEREST_ACCESS_TOKEN={tokens.get('access_token', 'N/A')}")

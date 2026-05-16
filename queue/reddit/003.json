@@ -1,0 +1,6 @@
+{
+  "post_id": "notion-job-tracker-r-01",
+  "product_id": "notion-job-tracker",
+  "title": "Built a job application tracker in Notion — pipeline, interview notes per stage, offer comparison [9€]",
+  "body": "Job searching across 6+ companies means managing different stages, different contacts, different salary expectations. I kept losing track of who to follow up with and what I said in which interview.\n\nBuilt this template to fix it:\n\n- Applications database — company, role, status (Wishlist → Offer), salary range, remote policy, excitement score, follow-up date\n- Interviews database — one entry per interview stage. Questions asked, my answers, what to improve next time\n- Contacts database — every HR contact, hiring manager and interviewer per company\n- Offers database — compare base salary, bonus, equity, benefits and remote policy side by side\n- Dashboard — overview of your full pipeline\n\nWorks on Notion's free plan. EN/DE.\n\n→ https://tinycraft.gumroad.com/l/nwriss"
+}

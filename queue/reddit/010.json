@@ -1,0 +1,6 @@
+{
+  "post_id": "notion-book-tracker-r-01",
+  "product_id": "notion-book-tracker",
+  "title": "Built a book tracker in Notion with a Quotes database and Reading Sessions log [7€]",
+  "body": "I kept finishing books and then forgetting everything about them. Needed something more than a list with star ratings.\n\nBuilt this template with three databases:\n\n- Books — status (Want to Read / Reading / Done / Abandoned), rating, genre, format, dates, page count, My Takeaway (one sentence on what I'll do differently), recommendation\n- Quotes — save highlights with book relation, page number and tags: Wisdom / Actionable / Surprising / Motivating / Warning\n- Reading Sessions — each time I sit down: date, pages read, minutes spent, mood (Focused / Inspired / Distracted / Tired), notes\n\nThe part I find most useful: the Quotes database filtered by \"Actionable\" tags. Those are the quotes that actually changed my behavior.\n\nFree Notion plan works. 7€ one-time.\n\n→ https://tinycraft.gumroad.com/l/ienuys"
+}
