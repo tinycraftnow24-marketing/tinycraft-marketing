@@ -1,6 +1,6 @@
 {
   "post_id": "notion-product-roadmap-r-01",
   "product_id": "notion-product-roadmap",
-  "title": "Built a product roadmap system in Notion — features linked to user problems, effort/impact scoring, release tracking [9€]",
+  "title": "Built a product roadmap system in Notion — features linked to user problems, effort/impact scoring, release tracking",
   "body": "Been using Notion for product planning but kept struggling with two things: knowing *why* I was building something, and prioritizing without going on gut feel.\n\nBuilt this template to solve it:\n\n- Features database — status pipeline (Idea → Done), Effort (S/M/L/XL), Impact (Low–Critical), Priority (P0–P3), linked to releases and user problems\n- User Problems database — the real problems behind your features: severity, how many users it affects, source (interview/survey/analytics), status\n- Releases database — group features into versioned releases with target dates and release notes\n- Feedback database — capture raw user feedback from email/Reddit/Twitter, link it to the feature it inspired\n\nThe workflow: add a User Problem before adding a Feature. If you can't name the problem, question whether to build the feature at all.\n\nWorks on Notion's free plan. EN.\n\n→ https://tinycraft.gumroad.com/l/jlozlp"
 }
